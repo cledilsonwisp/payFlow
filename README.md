@@ -5,6 +5,7 @@
 
 <h1 align="center">Pay Flow</h1>
 
+
 - [x] Liftoff  :fist_left:
 - [x] Maximum Speed  :leg:
 - [ ] In Orbit 👨‍🚀
@@ -13,9 +14,13 @@
 - [ ] Acelerando sua Carreira 🚀
 - [ ] Encerramento da Missão 💜
  
+---
+
 
 
 <h2 align="center">Sobre 📖</h2>
+
+
    
 <p align="center">
    Esse projeto foi desenvolvido na Next Level Week, uma semana intensa de estudos, networking, amizade, trabalho em grupo, acompanhado de um projeto sensacional desenvolvido pela Rocketseat do dia 20 ao dia 27 de Junho.<br>
@@ -25,6 +30,8 @@
 
 ---
 
+
+
    <div align="center">
 
    [![Linkedin Badge](https://img.shields.io/static/v1?label=&message=Cledilson&color=0000FF&style=for-the-badge&logo=LinkedIn)](https://www.linkedin.com/in/cledilson-programador/)
@@ -33,12 +40,22 @@
    [![issues](https://img.shields.io/github/stars/CledilsonWisp/payFlow)]()
    </div>
 
+
+
 ---
+
+
 
 <h2 align="center">Preview 📱</h2>
 
+
+
    > * Essa aplicação ainda está em desenvolvimento...
+
+
 ---
+
+
 
 
 <h2 align="center">Tópicos 📋</h2>
@@ -56,7 +73,12 @@
 
    </p>
 
+
+
 ---
+
+
+
 
 <h2 align="center">Layout 🎨</h2>
 
@@ -70,7 +92,11 @@
    - <a href="https://www.figma.com/file/kLK7FYnWKMoN68sQXcSniu/PayFlow">Mobile</a> 📱
    </p>
 
+
 ---   
+
+
+
 
 <h2 align="center">Funcionalidades 🛠️</h2>
 
@@ -82,13 +108,17 @@
   
    </p>
 
+
 ---
+
+
+
 
 <h2 align="center">Tecnologia 💻</h2>
  <p>
 
  -[flutter](https://flutter.dev/docs/get-started/install)
- 
+
  </p>
 
 ---
