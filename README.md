@@ -15,7 +15,6 @@
  
 
 
-
 <h2 align="center">Sobre 📖</h2>
    
 <p align="center">
@@ -87,7 +86,7 @@
 
 <h2 align="center">Tecnologia 💻</h2>
  <p>
- - [flutter](https://flutter.dev/docs/get-started/install)
+ -[flutter](https://flutter.dev/docs/get-started/install)
  </p>
 
 ---
