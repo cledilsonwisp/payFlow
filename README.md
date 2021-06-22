@@ -86,7 +86,9 @@
 
 <h2 align="center">Tecnologia 💻</h2>
  <p>
+
  -[flutter](https://flutter.dev/docs/get-started/install)
+ 
  </p>
 
 ---
