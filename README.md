@@ -1,8 +1,11 @@
-![pay flow](https://github.com/CledilsonWisp/payFlow/blob/main/assets/images/logofull.png)
 
-# pay_flow
+<p align="center">
+      <img src="https://github.com/CledilsonWisp/payFlow/blob/main/assets/images/logofull.png" width="100" alt="logo payFlow"/>
+</p>
 
-A new Flutter project.
+<h1 align="center">Pay Flow</h1>
+
+- [x] Liftoff :fist_left:
 
 ## Getting Started
 
