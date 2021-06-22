@@ -5,9 +5,51 @@
 
 <h1 align="center">Pay Flow</h1>
 
-- [x] Liftoff :fist_left:
+- [x] Liftoff  :fist_left:
+- [x] Maximum Speed  :leg:
+- [ ] In Orbit 👨‍🚀
+- [ ] Landing 🔥
+- [ ] Surface Exploration ⚡
+- [ ] Acelerando sua Carreira 🚀
+- [ ] Encerramento da Missão 💜
+ 
 
-## Getting Started
+---
+
+<h2 align="center">Tópicos 📋</h2>
+
+   <p>
+   
+   - [Sobre 📖](#sobre-)
+   - [Preview 📱](#preview-)
+   - [Layout 🎨](#layout-)
+   - [Funcionalidades 🛠️](#Funcionalidades-%EF%B8%8F)
+   - [Desafios e Aprendizados no Caminho 🤯](#desafios-e-aprendizados-no-caminho-)
+   - [Arquivos no Notion 📋](#arquivos-no-notion-)
+   - [Como Usar 🤔](#como-usar-)
+   - [Como Contribuir 💪](#como-contribuir-)
+   - [Licença 📝](#licença-)
+
+   </p>
+
+---
+
+<h2 align="center">Sobre 📖</h2>
+   
+<p align="center">
+   Esse projeto foi desenvolvido na Next Level Week, uma semana intensa de estudos, networking, amizade, trabalho em grupo, acompanhado de um projeto sensacional desenvolvido pela Rocketseat do dia 20 ao dia 27 de Junho.<br>
+   Essa aplicação é um Gerenciamento de Boletos, contendo vários recursos, que em breve serão desenvolvidos. <br>
+</p>
+
+---
+
+<h2 align="center">Preview 📱</h2>
+
+   > * Essa aplicação ainda está em desenvolvimento...
+---
+
+
+
 
 This project is a starting point for a Flutter application.
 
