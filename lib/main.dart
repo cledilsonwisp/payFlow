@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:pay_flow/app/app_widget.dart';
 
 
 void main() {
-
-  printMessage(message: 'Deu certo');
-
-}
-
-void printMessage({ required String message}){
-  print(message.replaceAll('Deu', 'Está'));
+  runApp(AppWidget());
 }
