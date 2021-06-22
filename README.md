@@ -121,7 +121,10 @@
 
  </p>
 
+
 ---
+
+
 
 
 <h2 align="center">Desafios e Aprendizados no Caminho </h2>
@@ -130,13 +133,20 @@
    Ainda em Desenvolvimento.<br>
    </p>
 
+
 ---
+
+
+
 
 <h2 align="center">Arquivos no Notion </h2>
 
 - [Flutter Trail](https://www.notion.so/NLW-Together-Conte-dos-complementares-ae22125e899549efb2d4e360b5ee5ca3) 🚀
 
+
+
 ---
+
 
 
 <h2 align="center">Como Usar </h2>
@@ -157,6 +167,8 @@
    $ flutter run
    ```
 
+
+
 ---
 
 <h2 align="center">Como Contribuir 💪</h2>
@@ -174,6 +186,8 @@
    $ git push origin my-feature
    ```
 
+
 ---
+
 
 >Esse projeto foi desenvolvido por **[@Cledilson silva](https://www.linkedin.com/in/cledilson-programador/)**, com o instrutor **[@GabulDev](https://www.linkedin.com/in/gabuldev/)**, na #NextLevelWeek05 da **[Rocketseat](https://rocketseat.com.br/)**.<br>
