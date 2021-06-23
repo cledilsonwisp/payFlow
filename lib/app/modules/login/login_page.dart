@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:pay_flow/app/modules/login/login_controller.dart';
 import 'package:pay_flow/shared/themes/appColors.dart';
 import 'package:pay_flow/shared/themes/appImages.dart';
 import 'package:pay_flow/shared/themes/appTextStyle.dart';
 import 'package:pay_flow/shared/widgets/social_login_button.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -12,6 +14,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final controller = LoginController();
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -38,21 +41,32 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             Positioned(
-              bottom: size.height * 0.07, left: 0, right: 0,
-              child: Column( 
+              bottom: size.height * 0.07,
+              left: 0,
+              right: 0,
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(AppImages.logomini),
                   Padding(
-                    padding: const EdgeInsets.only(left:70, right: 70,top: 30),
-                    child: Text("Organize seus boletos em um só lugar",style:TextStyles.titleHome,textAlign: TextAlign.center,),
+                    padding:
+                        const EdgeInsets.only(left: 70, right: 70, top: 30),
+                    child: Text(
+                      "Organize seus boletos em um só lugar",
+                      style: TextStyles.titleHome,
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top:40.0,left: 40,right: 40),
-                    child: SocialLoginButton(onTap: (){
-                      print('clicou');
-                    },),
+                    padding:
+                        const EdgeInsets.only(top: 40.0, left: 40, right: 40),
+                    child: SocialLoginButton(
+                      onTap:(){
+                        controller.googleSignIn(context);
+                      }
+                      ,
+                    ),
                   ),
                 ],
               ),
