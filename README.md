@@ -9,7 +9,7 @@
 - [x] Liftoff  :fist_left:
 - [x] Maximum Speed  :leg:
 - [x] In Orbit 👨‍🚀
-- [ ] Landing 🔥
+- [x] Landing 🔥
 - [ ] Surface Exploration ⚡
 - [ ] Acelerando sua Carreira 🚀
 - [ ] Encerramento da Missão 💜
