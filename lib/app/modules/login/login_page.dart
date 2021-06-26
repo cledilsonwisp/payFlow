@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:pay_flow/app/modules/login/login_controller.dart';
 import 'package:pay_flow/shared/themes/appColors.dart';
 import 'package:pay_flow/shared/themes/appImages.dart';
@@ -39,6 +40,42 @@ class _LoginPageState extends State<LoginPage> {
                 width: size.width * 0.554,
                 height: size.height * 0.459,
               ),
+            ),
+            Positioned(
+              left: 80,
+              top: 280,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
+                  boxShadow: [
+                  BoxShadow(
+                    color: AppColors.secondary.withOpacity(0.9),
+                    spreadRadius: 10,
+                    blurRadius: 0,
+                    offset: Offset(0,0)
+                  ),
+                  
+                ]),
+                child: Center(child: Icon(Icons.add_box_outlined,color: AppColors.stroke,),),
+              )
+            ),
+             Positioned(
+              right: 80,
+              top: 185,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
+                  boxShadow: [
+                  BoxShadow(
+                    color: AppColors.secondary.withOpacity(0.9),
+                    spreadRadius: 10,
+                    blurRadius: 0,
+                    offset: Offset(0,0)
+                  ),
+                  
+                ]),
+                child: Center(child: Icon(Icons.description_outlined, color: AppColors.stroke,),),
+              )
             ),
             Positioned(
               bottom: size.height * 0.07,

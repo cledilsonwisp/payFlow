@@ -10,8 +10,8 @@
 - [x] Maximum Speed  :leg:
 - [x] In Orbit 👨‍🚀
 - [x] Landing 🔥
-- [ ] Surface Exploration ⚡
-- [ ] Acelerando sua Carreira 🚀
+- [x] Surface Exploration ⚡
+- [x] Acelerando sua Carreira 🚀
 - [ ] Encerramento da Missão 💜
  
 ---
@@ -130,7 +130,7 @@
 <h2 align="center">Desafios e Aprendizados no Caminho </h2>
 
    <p>
-   Ainda em Desenvolvimento.<br>
+   Um dos meus  maiores aprendizados durante o desenvolvimento foi os construtores nomeados (factory), componetização do aplicativo e uma gerência de estado simples.<br>
    </p>
 
 

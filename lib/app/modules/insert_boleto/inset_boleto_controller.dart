@@ -31,7 +31,7 @@ class InsetBoletoController{
     final form = formKey.currentState;
     if(form!.validate()) {
       print(boletoModel);
-      return saveBoleto();
+      return await saveBoleto();
      }
   }
 

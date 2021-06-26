@@ -88,7 +88,7 @@ class _InsetBoletoPageState extends State<InsetBoletoPage> {
                 icon: FontAwesomeIcons.barcode,
                 editingController: barcodeInputTextController,
                 onChanged: (value) {
-                  controller.onChanged(barcode: value );
+                  controller.onChanged(barcode: value.replaceAll('null', 'Código vazio') );
                 },
                 validator: controller.validateCodigo,
               ),
@@ -104,8 +104,9 @@ class _InsetBoletoPageState extends State<InsetBoletoPage> {
           Navigator.pop(context);
         },
         secondaryLabel: 'Cadastrar',
-        secondaryOntap: () {
-          controller.cadastrarBoleto();
+        secondaryOntap: () async {
+          await controller.cadastrarBoleto();
+          Navigator.popUntil(context,ModalRoute.withName('/home'));
         },
       ),
     );

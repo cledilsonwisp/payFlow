@@ -1,26 +1,22 @@
+import 'package:animated_card/animated_card.dart';
 import 'package:flutter/material.dart';
+import 'package:pay_flow/app/modules/extract/extract_page.dart';
 import 'package:pay_flow/app/modules/home/home_controller.dart';
-import 'package:pay_flow/shared/models/boleto_model.dart';
+import 'package:pay_flow/app/modules/meusBoletos/meus_boletos_page.dart';
+import 'package:pay_flow/shared/models/user_model.dart';
 import 'package:pay_flow/shared/themes/appColors.dart';
 import 'package:pay_flow/shared/themes/appTextStyle.dart';
-import 'package:pay_flow/shared/widgets/boleto_list/boleto_list_widget.dart';
-import 'package:pay_flow/shared/widgets/boleto_tile/boleto_tile_widget.dart';
 
 class MyHomePage extends StatefulWidget {
+  final UserModel user;
+
+  const MyHomePage({Key? key, required this.user}) : super(key: key);
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   final controller = HomeController();
-  final pages = [
-    Container(
-      child:BoletoListWidget(),
-    ),
-    Container(
-      color: Colors.green,
-    ),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -31,39 +27,50 @@ class _MyHomePageState extends State<MyHomePage> {
             height: 152,
             color: AppColors.primary,
             child: Center(
-              child: ListTile(
-                title: Text.rich(
-                  TextSpan(
-                    text: 'Olá, ',
-                    style: TextStyles.titleRegular,
-                    children: [
-                      TextSpan(
-                        text: 'Ana.',
-                        style: TextStyles.titleBoldBackground,
-                      ),
-                    ],
+              child: AnimatedCard(
+                direction: AnimatedCardDirection.right,
+                child: ListTile(
+                  title: Text.rich(
+                    TextSpan(
+                      text: 'Olá, ',
+                      style: TextStyles.titleRegular,
+                      children: [
+                        TextSpan(
+                          text: '${widget.user.name}.',
+                          style: TextStyles.titleBoldBackground,
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                subtitle: Text(
-                  'Mantenha as suas contas em dia',
-                  style: TextStyles.captionShape,
-                ),
-                trailing: Container(
-                  height: 60,
-                  width: 60,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    image: DecorationImage(
-                        image: NetworkImage(
-                            'https://static.wixstatic.com/media/353a77_d1eb22a21b2247c49af2f68131fa842e~mv2.jpg'),
-                        fit: BoxFit.cover),
-                    borderRadius: BorderRadius.circular(5),
+                  subtitle: Text(
+                    'Mantenha as suas contas em dia',
+                    style: TextStyles.captionShape,
+                  ),
+                  trailing: Container(
+                    height: 60,
+                    width: 60,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      image: DecorationImage(
+                          image: NetworkImage('${widget.user.photoUrl}'
+                              // 'https://static.wixstatic.com/media/353a77_d1eb22a21b2247c49af2f68131fa842e~mv2.jpg'7,
+                              ),
+                          fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
                   ),
                 ),
               ),
             ),
           )),
-      body: pages[controller.currentPage],
+      body: [
+        MeusBoletosPage(
+          key: UniqueKey(),
+        ),
+        ExtractPage(
+          key: UniqueKey(),
+        )
+      ][controller.currentPage],
       bottomNavigationBar: Container(
         height: 90,
         child: Row(
@@ -72,14 +79,18 @@ class _MyHomePageState extends State<MyHomePage> {
             IconButton(
               onPressed: () {
                 controller.setPage(0);
+                setState(() {});
               },
               icon: Icon(Icons.home),
-              color: AppColors.primary,
+              color: controller.currentPage == 0
+                  ? AppColors.primary
+                  : AppColors.body,
             ),
             InkWell(
-              onTap: () {
-                // Navigator.pushNamed(context,'/barCode');
-                Navigator.pushNamed(context, '/insertBoleto');
+              onTap: () async {
+                await Navigator.pushNamed(context, '/barCode');
+                setState(() {});
+                
               },
               child: Container(
                 height: 56,
@@ -96,9 +107,12 @@ class _MyHomePageState extends State<MyHomePage> {
             IconButton(
               onPressed: () {
                 controller.setPage(1);
+                setState(() {});
               },
               icon: Icon(Icons.description_outlined),
-              color: AppColors.body,
+              color: controller.currentPage == 1
+                  ? AppColors.primary
+                  : AppColors.body,
             ),
           ],
         ),
