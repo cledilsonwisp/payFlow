@@ -13,7 +13,7 @@ class BoletoModel {
     this.dueDate,
     this.value,
     this.barcode,
-    this.isPaid
+    this.isPaid = false
   });
   BoletoModel copyWith({
     String? name,

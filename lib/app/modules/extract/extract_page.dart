@@ -5,6 +5,7 @@ import 'package:pay_flow/shared/themes/appColors.dart';
 import 'package:pay_flow/shared/themes/appTextStyle.dart';
 import 'package:pay_flow/shared/widgets/boleto_info/boleto_info_widget.dart';
 import 'package:pay_flow/shared/widgets/boleto_list/boleto_list_controller.dart';
+import 'package:pay_flow/shared/widgets/boleto_list/boleto_list_paid_widget.dart';
 import 'package:pay_flow/shared/widgets/boleto_list/boleto_list_widget.dart';
 
 class ExtractPage extends StatefulWidget {
@@ -21,14 +22,12 @@ class _ExtractPageState extends State<ExtractPage> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        children: [
-       
+        children: [     
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
             child:  ListTile(
                  title: Text( "Meus Extratos",style: TextStyles.titleBoldHeading,),
                  trailing: Text("Todos",style: TextStyles.captionBody,),
-                 
                )
           ),
           Padding(
@@ -41,7 +40,7 @@ class _ExtractPageState extends State<ExtractPage> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
-            child: BoletoListWidget(
+            child: BoletoListPaid(
               controller: controller,
             ),
           ),
