@@ -18,9 +18,10 @@ class BoletoTileWidget extends StatelessWidget {
         children: [
 
           TextSpan(
-            text: "${data.value!.toStringAsFixed(2)}",
+            text: "${data.value!.toStringAsFixed(2)}\n",
             style: TextStyles.trailingBold,
           ),
+          TextSpan(text: data.isPaid! ? 'Boleto pago' : '',style: TextStyles.captionBody )
           
         ],
       )),

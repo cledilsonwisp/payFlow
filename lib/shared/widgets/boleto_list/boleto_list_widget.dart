@@ -103,6 +103,7 @@ class _BoletoListWidgetState extends State<BoletoListWidget> {
                                                 style: TextStyles.buttonBackground,
                                                 ontap: () {
                                                   widget.controller.setarEstado('${e.name}', true);
+                                                  Navigator.pop(context);
                                                 },
                                                 boxDecoration: BoxDecoration(
                                                     borderRadius: BorderRadius.circular(5),

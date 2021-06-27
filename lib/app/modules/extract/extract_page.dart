@@ -24,7 +24,7 @@ class _ExtractPageState extends State<ExtractPage> {
       child: Column(
         children: [     
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
+            padding: const EdgeInsets.symmetric(horizontal: 24,vertical: 24),
             child:  ListTile(
                  title: Text( "Meus Extratos",style: TextStyles.titleBoldHeading,),
                  trailing: Text("Todos",style: TextStyles.captionBody,),
